@@ -1,0 +1,13 @@
+{
+  "hosting": {
+    "public": "arcane_website/build/web",
+    "predeploy": [
+      "cd arcane_website && flutter build web"
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
