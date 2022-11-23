@@ -1,0 +1,6 @@
+package art.arcane.arcane_website
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
