@@ -1,17 +1,41 @@
-import 'package:cupertino_lists/cupertino_lists.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+Author cyberpwn = Author()
+  ..name = "cyberpwn"
+  ..githubProfile = "https://github.com/cyberpwnn"
+  ..avatar = "https://avatars.githubusercontent.com/u/10619135?v=4"
+  ..twitterProfile = "@cyberpwnn"
+  ..bio = "Artificial Intelligence surpasses natural stupidity."
+  ..email = "dan@arcane.art"
+  ..color = Colors.purple
+  ..discordProfile = "cyberpwn#1337";
+
+Author nextdoorPsycho = Author()
+  ..name = "NextdoorPsycho"
+  ..color = const Color(0xFF003b6f)
+  ..githubProfile = "https://github.com/NextdoorPsycho"
+  ..avatar = "https://avatars.githubusercontent.com/u/29320316?v=4"
+  ..twitterProfile = "@DontUseTwitter"
+  ..bio = "Who said the universe was obligated to make sense to you? "
+  ..email = "psycho@arcane.art"
+  ..discordProfile = "⋈-NextdoorPsycho-⋈#0001";
+
+List<Author> authors = [cyberpwn, nextdoorPsycho];
 
 List<Project> projects = [
   Project()
     ..section = "Discord Bots"
+    ..authors = [nextdoorPsycho]
     ..name = "Abyssalith"
     ..icon = CupertinoIcons.bubble_middle_bottom_fill
     ..description = "A general purpose discord bot"
+    ..discontinued = true
     ..github = "https://github.com/VolmitSoftware/Abyssalith"
     ..color = Colors.indigoAccent,
   Project()
     ..section = "Bukkit Libraries"
+    ..authors = [cyberpwn]
     ..name = "Phantom"
     ..icon = CupertinoIcons.arrow_right_circle_fill
     ..logo =
@@ -21,6 +45,7 @@ List<Project> projects = [
     ..color = Colors.deepPurple,
   Project()
     ..section = "Bukkit Libraries"
+    ..authors = [cyberpwn]
     ..name = "Mortar"
     ..icon = CupertinoIcons.arrow_right_circle_fill
     ..logo =
@@ -30,6 +55,7 @@ List<Project> projects = [
     ..color = Colors.blueGrey,
   Project()
     ..section = "Bukkit Plugins"
+    ..authors = [cyberpwn, nextdoorPsycho]
     ..name = "Iris"
     ..logo =
         "https://raw.githubusercontent.com/VolmitSoftware/Iris/master/icon.png"
@@ -39,6 +65,7 @@ List<Project> projects = [
     ..color = Colors.greenAccent,
   Project()
     ..section = "Bukkit Plugins"
+    ..authors = [cyberpwn]
     ..name = "Gloss"
     ..github = "https://github.com/VolmitSoftware/Gloss"
     ..logo =
@@ -48,6 +75,7 @@ List<Project> projects = [
     ..color = Colors.purpleAccent,
   Project()
     ..section = "Bukkit Plugins"
+    ..authors = [cyberpwn]
     ..name = "Bile Tools"
     ..github = "https://github.com/VolmitSoftware/BileTools"
     ..logo =
@@ -57,6 +85,7 @@ List<Project> projects = [
     ..color = Colors.green,
   Project()
     ..section = "Bukkit Plugins"
+    ..authors = [nextdoorPsycho, cyberpwn]
     ..github = "https://github.com/VolmitSoftware/Adapt"
     ..name = "Adapt"
     ..description = "A skill based MMO plugin for Minecraft"
@@ -65,6 +94,7 @@ List<Project> projects = [
     ..color = Colors.red,
   Project()
     ..section = "Bukkit Plugins"
+    ..authors = [cyberpwn]
     ..github = "https://github.com/VolmitSoftware/React"
     ..name = "React"
     ..color = Colors.cyanAccent
@@ -74,6 +104,7 @@ List<Project> projects = [
     ..discontinued = true,
   Project()
     ..section = "Bukkit Plugins"
+    ..authors = [cyberpwn]
     ..github = "https://github.com/VolmitSoftware/WormholesPlugin"
     ..name = "Wormholes"
     ..description =
@@ -84,26 +115,26 @@ List<Project> projects = [
     ..discontinued = true,
 ];
 
+class Author {
+  Color color = Colors.transparent;
+  String name = "Anonymous";
+  String githubProfile = "";
+  String twitterProfile = "";
+  String discordProfile = "";
+  String website = "";
+  String email = "";
+  String bio = "";
+  String avatar = "";
+}
+
 class Project {
   String name = "Unnamed Project";
   IconData icon = CupertinoIcons.app_fill;
   String logo = "";
   String github = "";
   String section = "Projects";
+  List<Author> authors = [];
   bool discontinued = false;
   Color color = CupertinoColors.activeBlue;
   String description = "";
-
-  Project();
-
-  Widget build(BuildContext context) => CupertinoListTile.notched(
-        title: Text(name),
-        leading: logo.isNotEmpty
-            ? Image.network(logo)
-            : Icon(
-                icon,
-                color: color,
-              ),
-        trailing: const CupertinoListTileChevron(),
-      );
 }

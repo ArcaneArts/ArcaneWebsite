@@ -10,6 +10,8 @@ dependencies:
   flutter_neumorphic: ^3.2.0
   cupertino_lists: ^1.0.1
   cupertino_icons: ^1.0.5
+  cupertino_stackview: ^2.0.0
+  flyout: ^1.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
