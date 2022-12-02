@@ -113,6 +113,99 @@ List<Project> projects = [
         "https://raw.githubusercontent.com/VolmitSoftware/Volmit/master/images/wormholes/symbol.png"
     ..color = Colors.orange
     ..discontinued = true,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Amulet"
+    ..icon = CupertinoIcons.alt
+    ..description =
+        "A very simple collections & general util api that breaks all sorts of rules using manifold."
+    ..github = "https://github.com/ArcaneArts/Amulet"
+    ..color = Colors.indigoAccent,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Curse"
+    ..icon = CupertinoIcons.arrow_2_circlepath_circle
+    ..description =
+        "It's right there! I can literally see it, I can read it, why the hell can't I change it?\n\nWhy the fuck did they make this final?\n\nWhat dickhead decided to make this an immutable singleton?"
+    ..github = "https://github.com/ArcaneArts/Curse"
+    ..color = Colors.red,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Source"
+    ..icon = CupertinoIcons.antenna_radiowaves_left_right
+    ..description = "A procedural complex for madmen"
+    ..github = "https://github.com/ArcaneArts/Source"
+    ..color = Colors.amberAccent,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Spatial"
+    ..icon = CupertinoIcons.arrow_branch
+    ..description = "Put stuff into other stuff in good way"
+    ..github = "https://github.com/ArcaneArts/Spatial"
+    ..color = Colors.lightGreenAccent,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Edict"
+    ..icon = CupertinoIcons.command
+    ..description = "A reflective command system for anything"
+    ..github = "https://github.com/ArcaneArts/Edict"
+    ..color = Colors.pinkAccent,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Chrono"
+    ..icon = CupertinoIcons.clock
+    ..description =
+        "Some basic time classes including a precision stopwatch for sub millisecond accuracy"
+    ..github = "https://github.com/ArcaneArts/Chrono"
+    ..color = Colors.yellowAccent,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "BitPack"
+    ..icon = CupertinoIcons.archivebox
+    ..description =
+        "Palette Data but in bits, not bytes. Essentially it creates a palette for each possible entry using Lists, or Hashes depending on the size of the palette, then writes the palette index in bits based on how many possibilities there are. For example, if you have only 4 possible palette items, We can store each palette index in only 2 bits. This means a single long can store 32 entries each!"
+    ..github = "https://github.com/ArcaneArts/BitPack"
+    ..color = Colors.deepOrangeAccent,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "MultiBurst"
+    ..icon = CupertinoIcons.group_solid
+    ..description = "Very simple bursting of jobs"
+    ..github = "https://github.com/ArcaneArts/MultiBurst"
+    ..color = Colors.teal,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "NBTSon"
+    ..icon = CupertinoIcons.arrow_up_doc_fill
+    ..description =
+        "Gain the advantage of a similar storage footprint with the advantage of your object being the codec, with the power of Gson type adapters!\n\nEssentially Objects are converted to Json first, using gson, then are converted to NBT after. This ensures types like Enums & lists are properly serialized, this also means gson type adapters work fine.\n\nDeserialization works just the same. Json is created from the NBT then it's processed by Gson back into your object!"
+    ..github = "https://github.com/ArcaneArts/NBTSon"
+    ..color = Colors.brown,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Fukkit"
+    ..icon = CupertinoIcons.ant
+    ..description = "Amulet & Manifold extensions for Bukkit"
+    ..github = "https://github.com/ArcaneArts/Fukkit"
+    ..color = Colors.lightGreen,
+  Project()
+    ..section = "Java Packages"
+    ..authors = [cyberpwn]
+    ..name = "Cram"
+    ..icon = CupertinoIcons.archivebox_fill
+    ..description = "Pak files"
+    ..github = "https://github.com/ArcaneArts/Cram"
+    ..color = Colors.blueGrey,
 ];
 
 class Author {

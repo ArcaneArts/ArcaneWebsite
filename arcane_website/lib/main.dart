@@ -287,3 +287,5 @@ class AuthorListTile extends StatelessWidget {
         trailing: const CupertinoListTileChevron(),
       );
 }
+
+List<Project> projects2 = [];
