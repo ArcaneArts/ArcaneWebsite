@@ -43,6 +43,38 @@ List<Project> projects = [
     ..github = "https://github.com/VolmitSoftware/Abyssalith"
     ..color = Colors.indigoAccent,
   Project()
+    ..section = "Discord Bots"
+    ..authors = [nextdoorPsycho]
+    ..name = "Demo Bot"
+    ..icon = CupertinoIcons.bubble_middle_bottom_fill
+    ..description =
+        "This is a template that serves as a perfect starting point for bot development."
+    ..discontinued = false
+    ..github = "https://github.com/NextdoorPsycho/DemoBot"
+    ..color = const Color(0xFF2a7532),
+  Project()
+    ..section = "Mods"
+    ..authors = [nextdoorPsycho, cyberpwn]
+    ..name = "Wormholes (Forge)"
+    ..logo =
+        "https://raw.githubusercontent.com/VolmitSoftware/Volmit/master/images/wormholes/symbol.png"
+    ..description =
+        "This is a Forge Mod that is a Derivative of the Original spigot mod Wormholes by Cyberpwn, for Forge 1.18.2."
+    ..discontinued = false
+    ..github = "https://github.com/VolmitSoftware/WormholesFML"
+    ..color = Colors.orange,
+  Project()
+    ..section = "Mods"
+    ..authors = [nextdoorPsycho, cyberpwn]
+    ..name = "Wormholes (Fabric)"
+    ..logo =
+        "https://raw.githubusercontent.com/VolmitSoftware/Volmit/master/images/wormholes/symbol.png"
+    ..description =
+        "This is a Fabric Mod that is a Derivative of the Original spigot mod Wormholes by Cyberpwn, for Fabric 1.18.2."
+    ..discontinued = false
+    ..github = "https://github.com/VolmitSoftware/WormholesFabric"
+    ..color = Colors.orange,
+  Project()
     ..section = "Bukkit Libraries"
     ..authors = [cyberpwn]
     ..name = "Phantom"
