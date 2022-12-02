@@ -21,7 +21,16 @@ Author nextdoorPsycho = Author()
   ..email = "psycho@arcane.art"
   ..discordProfile = "⋈-NextdoorPsycho-⋈#0001";
 
-List<Author> authors = [cyberpwn, nextdoorPsycho];
+Author coco = Author()
+  ..name = "CocoTheOwner"
+  ..color = Colors.red
+  ..githubProfile = "https://github.com/CocoTheOwner"
+  ..avatar = "https://avatars.githubusercontent.com/u/65736624?v=4"
+  ..bio =
+      "Student from the Netherlands If you want to know me more you won't find that info here :)"
+  ..discordProfile = "Coco#1000";
+
+List<Author> authors = [cyberpwn, nextdoorPsycho, coco];
 
 List<Project> projects = [
   Project()
@@ -149,7 +158,7 @@ List<Project> projects = [
     ..color = Colors.lightGreenAccent,
   Project()
     ..section = "Java Packages"
-    ..authors = [cyberpwn]
+    ..authors = [cyberpwn, coco]
     ..name = "Edict"
     ..icon = CupertinoIcons.command
     ..description = "A reflective command system for anything"
