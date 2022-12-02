@@ -110,7 +110,7 @@ class ProjectDetailsScreen extends StatelessWidget {
               CupertinoListSection(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 14, bottom: 14),
+                    padding: const EdgeInsets.only(top: 14, bottom: 14),
                     child: Text(
                       project.description,
                       textAlign: TextAlign.left,
@@ -189,12 +189,51 @@ class AuthorDetailsScreen extends StatelessWidget {
               CupertinoListSection(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 14, bottom: 14),
+                    padding: const EdgeInsets.only(top: 14, bottom: 14),
                     child: Text(
                       author.bio,
                       textAlign: TextAlign.left,
                     ),
                   ),
+                  if (author.githubProfile.trim().isNotEmpty)
+                    CupertinoListTile(
+                      leading: Icon(CupertinoIcons.link),
+                      title: Text('GitHub Profile'),
+                      subtitle: Text(author.githubProfile),
+                    ),
+                  if (author.discordProfile.trim().isNotEmpty)
+                    CupertinoListTile(
+                      leading: Icon(CupertinoIcons.link),
+                      subtitle: Text(author.discordProfile),
+                      title: const Text('Discord Profile'),
+                    ),
+                  if (author.twitterProfile.trim().isNotEmpty)
+                    CupertinoListTile(
+                      leading: Icon(CupertinoIcons.link),
+                      title: Text('Twitter Profile'),
+                      subtitle: Text(author.twitterProfile),
+                    ),
+                  if (author.website.trim().isNotEmpty)
+                    CupertinoListTile(
+                      leading: Icon(CupertinoIcons.link),
+                      title: Text('Website'),
+                      subtitle: Text(author.website),
+                    ),
+                ],
+              ),
+              CupertinoListSection(
+                children: [
+                  CupertinoListTile.notched(
+                      title: Text(
+                    "Projects",
+                    style: CupertinoTheme.of(context)
+                        .textTheme
+                        .navTitleTextStyle
+                        .copyWith(color: author.color),
+                  )),
+                  ...projects
+                      .where((element) => element.authors.contains(author))
+                      .map((e) => ProjectListTile(project: e)),
                 ],
               ),
             ]))
