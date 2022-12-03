@@ -3,7 +3,10 @@ import 'package:cupertino_lists/cupertino_lists.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const ArcaneWebsite());
+void main() {
+  init();
+  runApp(const ArcaneWebsite());
+}
 
 class ArcaneWebsite extends StatefulWidget {
   const ArcaneWebsite({Key? key}) : super(key: key);

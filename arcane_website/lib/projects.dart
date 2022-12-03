@@ -19,7 +19,7 @@ Author nextdoorPsycho = Author()
   ..twitterProfile = "@DontUseTwitter"
   ..bio = "Who said the universe was obligated to make sense to you? "
   ..email = "psycho@arcane.art"
-  ..discordProfile = "⋈-NextdoorPsycho-⋈#0001";
+  ..discordProfile = "\u22C8-NextdoorPsycho-\u22C8#0001";
 
 Author coco = Author()
   ..name = "CocoTheOwner"
@@ -78,6 +78,7 @@ List<Project> projects = [
     ..section = "Bukkit Libraries"
     ..authors = [cyberpwn]
     ..name = "Phantom"
+    ..discontinued = true
     ..icon = CupertinoIcons.arrow_right_circle_fill
     ..logo =
         "https://raw.githubusercontent.com/VolmitSoftware/Phantom/main/icons8-thriller-64-color.png"
@@ -281,12 +282,177 @@ List<Project> projects = [
     ..pub = "https://pub.dev/packages/memcached"
     ..authors = [cyberpwn]
     ..name = "Memcached"
-    ..icon = CupertinoIcons.add_circled
+    ..icon = CupertinoIcons.arrow_2_circlepath
     ..description =
         "Simple in-memory key to object cache with expiry. Dynamic values mean there's no type checking or serialization. This means you can store anything you want in the cache."
     ..github = "https://github.com/ArcaneArts/memcached"
     ..color = Colors.deepOrange,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/mapped_list"
+    ..authors = [cyberpwn]
+    ..name = "Mapped List"
+    ..icon = CupertinoIcons.list_bullet
+    ..description =
+        "Use Map<int, T> instead of List for json patching efficiency, an extension for maps to use list methods on them when the key is an int (index)."
+    ..github = "https://github.com/ArcaneArts/mapped_list"
+    ..color = Colors.purple,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/tryhard"
+    ..authors = [cyberpwn]
+    ..name = "Tryhard"
+    ..icon = CupertinoIcons.ant
+    ..description =
+        "Continue trying to run something on an interval until it succeeds or the timeout elapses."
+    ..github = "https://github.com/ArcaneArts/tryhard"
+    ..color = Colors.blueGrey,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/jpatch"
+    ..authors = [cyberpwn]
+    ..name = "JPatch"
+    ..icon = CupertinoIcons.arrow_merge
+    ..description = "Patch json and diff json for easy patching."
+    ..github = "https://github.com/ArcaneArts/jpatch"
+    ..color = Colors.brown,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/precision_stopwatch"
+    ..authors = [cyberpwn]
+    ..name = "Precision Stopwatch"
+    ..icon = CupertinoIcons.clock_fill
+    ..description =
+        "A procedural complex for madmen. A port of Source, for java, Now in dart."
+    ..github = "https://github.com/ArcaneArts/precision_stopwatch"
+    ..color = Colors.amberAccent,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/quantum"
+    ..authors = [cyberpwn]
+    ..name = "Quantum"
+    ..icon = CupertinoIcons.arrow_merge
+    ..description =
+        "Synchronize a firestore document efficiently with json patching while decoupling the state updates from doc updates.\n\nDecouples the document stream updates from the state updates. Essentially when you push data to a quantum unit, it will instantly push it through to the stream you are listening to, and eventually pushing that back to the actual document. It will also receive from the firestore stream applying changes to your unit and will push it to the stream you are listening to also."
+    ..github = "https://github.com/ArcaneArts/quantum"
+    ..color = Colors.blueGrey,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/freeze"
+    ..authors = [cyberpwn]
+    ..name = "Freeze"
+    ..icon = CupertinoIcons.color_filter
+    ..description =
+        "Freeze renders by showing an image instead of the rendered widget to reduce element tree counts.\n\nThis freeze widget simply snapshots the child whenever the widget changes to prevent the flutter (web) framerate from getting low even when not redrawing the actual child widget."
+    ..github = "https://github.com/ArcaneArts/freeze"
+    ..color = Colors.blue,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/padded"
+    ..authors = [cyberpwn]
+    ..name = "Padded"
+    ..icon = CupertinoIcons.arrow_up_down
+    ..description =
+        "Adds directional widgets for padding to speed up padding widgets"
+    ..github = "https://github.com/ArcaneArts/padded"
+    ..color = Colors.brown,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/snackbar"
+    ..authors = [cyberpwn]
+    ..name = "Snackbar"
+    ..icon = CupertinoIcons.circle_bottomthird_split
+    ..description = "Simple snackbars"
+    ..github = "https://github.com/ArcaneArts/snackbar"
+    ..color = Colors.lightGreen,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/flyout"
+    ..authors = [cyberpwn]
+    ..name = "Flyout"
+    ..icon = CupertinoIcons.arrow_branch
+    ..description = "Simple flyouts"
+    ..github = "https://github.com/ArcaneArts/flyout"
+    ..color = Colors.redAccent,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/dialoger"
+    ..authors = [cyberpwn]
+    ..name = "Dialoger"
+    ..icon = CupertinoIcons.arrow_up_arrow_down_square_fill
+    ..description = "Simple dialogs"
+    ..github = "https://github.com/ArcaneArts/dialoger"
+    ..color = Colors.deepPurple,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/hydrogen"
+    ..authors = [cyberpwn]
+    ..name = "Hydrogen"
+    ..icon = CupertinoIcons.add
+    ..description = "A super simple design language"
+    ..github = "https://github.com/ArcaneArts/hydrogen"
+    ..color = Colors.indigo,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/charm"
+    ..authors = [cyberpwn]
+    ..name = "Charm"
+    ..icon = CupertinoIcons.map_pin
+    ..discontinued = true
+    ..description =
+        "Styles, Widgets & Utilities for Flutter, useful for quick apps."
+    ..github = "https://github.com/ArcaneArts/charm"
+    ..color = Colors.redAccent,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/ingest"
+    ..authors = [cyberpwn]
+    ..name = "Ingest"
+    ..icon = CupertinoIcons.cloud_download
+    ..description = "Get anything from the user quickly."
+    ..github = "https://github.com/ArcaneArts/ingest"
+    ..color = Colors.amberAccent,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/arcane"
+    ..authors = [cyberpwn]
+    ..name = "Arcane"
+    ..icon = CupertinoIcons.wand_stars
+    ..description = "Bootstrap"
+    ..github = "https://github.com/ArcaneArts/arcane"
+    ..color = Colors.deepPurpleAccent,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/base64_audio_source"
+    ..authors = [cyberpwn]
+    ..name = "Base64 Audio Source"
+    ..icon = CupertinoIcons.volume_up
+    ..description = "A base64 audio source for just audio"
+    ..github = "https://github.com/ArcaneArts/base64_audio_source"
+    ..color = Colors.deepOrangeAccent,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/animated_switcher"
+    ..authors = [cyberpwn]
+    ..name = "Animated Switcher"
+    ..icon = CupertinoIcons.switch_camera
+    ..description = "Simple widget switches with animation"
+    ..github = "https://github.com/ArcaneArts/animated_switcher"
+    ..color = Colors.brown,
+  Project()
+    ..section = "Flutter Packages"
+    ..pub = "https://pub.dev/packages/delayed_progress_indicator"
+    ..authors = [cyberpwn]
+    ..name = "Delayed Progress Indicator"
+    ..icon = CupertinoIcons.refresh_bold
+    ..description = "Loader delayed"
+    ..github = "https://github.com/ArcaneArts/delayed_progress_indicator"
+    ..color = Colors.pink,
 ];
+
+void init() {
+  projects.sort((a, b) => a.name.compareTo(b.name));
+}
 
 class Author {
   Color color = Colors.transparent;
