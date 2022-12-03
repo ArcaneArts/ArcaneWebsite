@@ -53,9 +53,9 @@ List<Project> projects = [
     ..github = "https://github.com/NextdoorPsycho/DemoBot"
     ..color = const Color(0xFF2a7532),
   Project()
-    ..section = "Mods"
+    ..section = "Forge Mods"
     ..authors = [nextdoorPsycho, cyberpwn]
-    ..name = "Wormholes (Forge)"
+    ..name = "Wormholes for Immersive Portals"
     ..logo =
         "https://raw.githubusercontent.com/VolmitSoftware/Volmit/master/images/wormholes/symbol.png"
     ..description =
@@ -64,9 +64,9 @@ List<Project> projects = [
     ..github = "https://github.com/VolmitSoftware/WormholesFML"
     ..color = Colors.orange,
   Project()
-    ..section = "Mods"
-    ..authors = [nextdoorPsycho, cyberpwn]
-    ..name = "Wormholes (Fabric)"
+    ..section = "Fabric Mods"
+    ..authors = [nextdoorPsycho]
+    ..name = "Wormholes for Immersive Portals"
     ..logo =
         "https://raw.githubusercontent.com/VolmitSoftware/Volmit/master/images/wormholes/symbol.png"
     ..description =
@@ -247,6 +247,45 @@ List<Project> projects = [
     ..description = "Pak files"
     ..github = "https://github.com/ArcaneArts/Cram"
     ..color = Colors.blueGrey,
+  Project()
+    ..section = "Dart Packages"
+    ..authors = [cyberpwn]
+    ..name = "Throttled"
+    ..icon = CupertinoIcons.arrow_up
+    ..pub = "https://pub.dev/packages/throttled"
+    ..description =
+        "Throttle functions are not delays, they work like cooldowns. Calling it once happens immediately, calling it again will within the cooldown will not trigger the callback. Calling it again after the cooldown will trigger the callback again. The last call will always trigger the callback after the delay if leaky is set to true."
+    ..github = "https://github.com/ArcaneArts/throttled"
+    ..color = Colors.lightBlue,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/microshaft"
+    ..authors = [cyberpwn]
+    ..name = "Microshaft"
+    ..icon = CupertinoIcons.arrow_3_trianglepath
+    ..description =
+        "Get logged in to a minecraft account quickly without all of the boilerplate of dancing with microsoft, xbox and mojang servers, maintining a cache for expiring tokens and whatnot. You now also need a client ID to provide launching services, there is one included in here for laziness though I recommend you use your own."
+    ..github = "https://github.com/ArcaneArts/microshaft"
+    ..color = Colors.indigoAccent,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/fast_log"
+    ..authors = [cyberpwn]
+    ..name = "Fast Log"
+    ..icon = CupertinoIcons.add_circled
+    ..description = "Super simple colored logging for the impatient developer"
+    ..github = "https://github.com/ArcaneArts/fast_log"
+    ..color = Colors.lightGreen,
+  Project()
+    ..section = "Dart Packages"
+    ..pub = "https://pub.dev/packages/memcached"
+    ..authors = [cyberpwn]
+    ..name = "Memcached"
+    ..icon = CupertinoIcons.add_circled
+    ..description =
+        "Simple in-memory key to object cache with expiry. Dynamic values mean there's no type checking or serialization. This means you can store anything you want in the cache."
+    ..github = "https://github.com/ArcaneArts/memcached"
+    ..color = Colors.deepOrange,
 ];
 
 class Author {
@@ -266,6 +305,7 @@ class Project {
   IconData icon = CupertinoIcons.app_fill;
   String logo = "";
   String github = "";
+  String pub = "";
   String section = "Projects";
   List<Author> authors = [];
   bool discontinued = false;
